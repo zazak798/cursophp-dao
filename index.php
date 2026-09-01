@@ -29,10 +29,23 @@ $aluno->insert();
 echo $aluno;
 */
 
+/*
+// Alterar um usuário
 $usuario = new Usuario();
 
 $usuario->loadById(11);
 
 $usuario->update("professor","12346");
+
+echo $usuario;
+*/
+
+$usuario = new Usuario();
+
+$usuario->loadById(11);
+
+$usuario->delete();
+
+echo $usuario;
 
 ?>
